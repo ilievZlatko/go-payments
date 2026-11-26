@@ -1,0 +1,74 @@
+# Binaries
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+/bin/
+/dist/
+/build/
+/out/
+
+# Test binaries and coverage
+*.test
+*.out
+coverage.txt
+coverage.html
+*.prof
+
+# Go workspace
+go.work
+go.work.sum
+
+# Vendor (remove this line if you commit vendor/)
+vendor/
+
+# Environment and secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.crt
+secrets/
+*.secret
+
+# Local config overrides
+config.local.*
+*.local.yaml
+*.local.yml
+*.local.json
+
+# Docker / local infra
+docker-compose.override.yml
+.docker/
+tmp/
+.air.toml
+
+# Logs
+*.log
+logs/
+
+# Generated code (uncomment if generated at build time instead of committed)
+# *.pb.go
+# *_gen.go
+# mocks/
+
+# Terraform / deployment state
+.terraform/
+*.tfstate
+*.tfstate.*
+*.tfvars
+.helm/
+
+# IDEs and editors
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+*.iml
+
+# OS files
+.DS_Store
+Thumbs.db
